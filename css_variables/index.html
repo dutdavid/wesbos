@@ -62,7 +62,8 @@
     const inputs = document.querySelectorAll('.control input');
 
     function handleUpdate() {
-      const suffix = this.dataset.sizing || '';--${this.name}`, this.value);
+      const suffix = this.dataset.sizing || '';
+      document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
       
     }
 
