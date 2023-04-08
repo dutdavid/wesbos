@@ -62,8 +62,9 @@
     const inputs = document.querySelectorAll('.control input');
 
     function handleUpdate() {
-      const suffix = this.dataset.sizing;
-      console.log(this.value);
+      const suffix = this.dataset.sizing || '';
+      
+      
     }
 
     inputs.forEach(input => input.addEventListener('change', handleUpdate));
