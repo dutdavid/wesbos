@@ -76,8 +76,9 @@
     const alpha = people.sort(function (lastOne, nextOne) {
       const [aLast, bFirst] = lastOne.split(', ')
       const [bLast, bFirst] = nextOne.split(', ')
-      console.log(last, first);
+      return aLast > bFirst ? -1 : 1;
     });
+    console.log(alpha);
     // 8. Reduce Exercise
     // Sum up the instances of each of these
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
