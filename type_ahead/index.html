@@ -31,7 +31,13 @@ function findMatches(wordToMatch, cities) {
 
 function displayMatches() {
 const matchArray = findMatches(this.value, cities);
-
+const html = matchArray.map(place => {
+  return `
+  <li>
+    span.
+    </li>
+  `
+})
 }
 const searchInput = document.querySelector('.search');
 const suggestions = document.querySelectorAll('.suggestion');
