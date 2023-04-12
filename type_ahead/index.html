@@ -25,6 +25,7 @@ fetch(endpoint)
 function findMatches(wordToMatch, cities) {
   return cities.filter(place => {
   const regex = new RegExp(wordToMatch)
+  return place.city.match()
 })
 }
 </script>
