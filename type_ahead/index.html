@@ -43,7 +43,7 @@ const html = matchArray.map(place => {
   return `
   <li>
     <span className="name">${cityName}, ${stateName}</span>
-    <span className="population">${place.population}</span>
+    <span className="population">${numberWithCommas(place.population)}</span>
     </li>
 
   `;
