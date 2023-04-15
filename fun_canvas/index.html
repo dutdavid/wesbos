@@ -42,6 +42,8 @@ function draw(e) {
   if (ctx.lineWidth >= 100 || ctx.lineWidth <= 1) {
     direction = !direction;
   }
+  if(direction) {
+    ctx.lineWidth++;
 </script>
 
 <style>
