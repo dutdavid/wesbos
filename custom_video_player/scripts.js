@@ -30,3 +30,5 @@ function togglePlay() {
     const scrubTime = (e.offsetX / progress.offsetWidth) * video.duration;
     video.currentTime = scrubTime;
   }
+  /* Hook up the event listeners */
+video.addEventListener('click', togglePlay);
